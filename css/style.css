@@ -1,0 +1,276 @@
+body {
+	font-family: 'Dosis', sans-serif;
+	margin: 0px;
+}
+
+figure {margin:0;}
+
+
+/* MENU */
+.menu {
+	position: fixed;
+	background-color: #ffffff;
+	top: 0;
+	width: 100px;
+	height: 100vh;
+}
+
+.menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li {
+	display:block;
+	height: 16.66vh;
+}
+
+.menu ul li a {
+	display:block;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.92);
+	transition: all 0.5s linear;
+	height:100%;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	line-height: 16.66vh;
+}
+
+.menu ul li.active a#btn-home,
+.menu ul li a#btn-home:hover {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.menu ul li.active a#btn-quien-soy,
+.menu ul li a#btn-quien-soy:hover {
+	color: #000000;
+	background-color: #FF4F00;
+}
+
+.menu ul li.active a#btn-formacion,
+.menu ul li a#btn-formacion:hover {
+	color: #000000;
+	background-color: #B60CE8;
+}
+
+.menu ul li.active a#btn-experiencia,
+.menu ul li a#btn-experiencia:hover {
+	color: #000000;
+	background-color: #0090FF;
+}
+
+.menu ul li.active a#btn-sobre-mi,
+.menu ul li a#btn-sobre-mi:hover {
+	color: #000000;
+	background-color: #0CE81A;
+}
+
+.menu ul li.active a#btn-contacto,
+.menu ul li a#btn-contacto:hover {
+	color: #000000;
+	background-color: #FFD10D;
+}
+
+
+/* HEADER */
+.header {
+	width: 100%;
+	height: 100vh;
+	background-color:#cccccc;
+	background-image: url(../images/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.header-msg {
+	position: absolute;
+	left: 180px;
+	top: 16.66vh;
+}
+
+.title {
+	font-family: 'Indie Flower', cursive;
+	line-height: 16.66vh;
+	color: white;
+	text-align: center;
+	font-size: 66px;
+	margin: 0;
+}
+
+.skills {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.skills li {
+	margin-bottom:10px;
+	font-size: 17px;
+	letter-spacing: 1px;
+	line-height: 28px;
+}
+
+.skills li span {
+	opacity:0;
+	font-size:28px;
+	font-weight: bold;
+}
+.no-cssanimations .skills li span {
+	opacity: 1;
+}
+
+.skills li:nth-child(1) span {
+	animation: skillAnimation 5s;
+	animation-iteration-count:infinite;
+	animation-delay:1s;
+	color: #FF4F00;
+}
+
+.skills li:nth-child(2) span {
+	animation: skillAnimation 5s;
+	animation-iteration-count:infinite;
+	animation-delay:2s;
+	color: #B60CE8;
+}
+
+.skills li:nth-child(3) span {
+	animation: skillAnimation 5s;
+	animation-iteration-count:infinite;
+	animation-delay:3s;
+	color: #0090FF;
+}
+
+.skills li:nth-child(4) span {
+	animation: skillAnimation 5s;
+	animation-iteration-count:infinite;
+	animation-delay:4s;
+	color: #0CE81A;
+}
+
+.skills li:nth-child(5) span {
+	animation: skillAnimation 5s;
+	animation-iteration-count:infinite;
+	animation-delay:5s;
+	color: #FFD10D;
+}
+
+
+@keyframes skillAnimation {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/* SECCIONES */
+#quien-soy {background-color: #FFDFD8}
+#formacion {background-color: #D3B9E8}
+#experiencia {background-color: #D8F6FF}
+#sobre-mi {background-color: #C3E8B9}
+#contacto {background-color: #FFF1CB}
+
+.section-container {
+	min-height: 100vh;
+}
+
+.section-padding {
+	padding: 0 0 50px 0;
+}
+
+h2 {
+	margin:0 0 20px 0;
+	font-family: 'Indie Flower', cursive;
+	font-size: 50px;
+	line-height: 16.66vh;
+}
+
+/* QUIEN SOY */
+#quien-soy p  {
+	margin-top: 20px;
+}
+
+.photo {
+	float:right;
+	width:120px;
+	margin: 20px 0 20px 20px;
+}
+
+.photo img {
+	width: 100%;
+}
+
+/* FORMACION */
+#formacion figure {
+	border: double 6px #B60CE8;
+	padding:10px;
+	background-color:#ffffff;
+}
+
+.formacion-img {
+ 	max-width: 100%;
+}
+
+/* EXPERIENCIA */
+#experiencia figure {
+	border: outset 6px #0090FF;
+	padding:10px;
+	background-color:#ffffff;
+	border-radius: 10px;
+}
+
+.experiencia-img {
+ 	width: 100%;
+}
+#experiencia ul {
+	list-style-type: disc;
+	padding-left:25px;
+}
+
+#experiencia li {
+	margin-bottom: 10px;
+}
+
+#experiencia h3 {
+	margin:0px;
+	font-size: 24px;
+}
+
+#experiencia h4 {
+	margin: 4px;
+	color:#0090FF;
+}
+
+#experiencia h4 a {
+	color:#0090FF;
+}
+
+/* SOBRE MI */
+.zonaVideo {
+	text-align:center;
+}
+
+
+.footer {
+	background-color: rgba(0,0,0,0.92);
+	color:#fff;
+	padding: 15px;
+	text-align:right;	
+}

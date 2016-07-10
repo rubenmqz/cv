@@ -1,0 +1,61 @@
+.container {
+	box-sizing: border-box;
+	width:100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left:120px;	
+}
+
+/* clearfix hack */
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col-13,
+.col-14,
+.col-15,
+.col-16,
+.col-17,
+.col-18,
+.col-19,
+.col-20 {
+	float: left;
+	display: inline-block;
+	padding: 0 1%;
+}
+
+.col-1 {width: 3%;}
+.col-2 {width: 8%;}
+.col-3 {width: 13%;}
+.col-4 {width: 18%;}
+.col-5 {width: 23%;}
+.col-6 {width: 28%;}
+.col-7 {width: 33%;}
+.col-8 {width: 38%;}
+.col-9 {width: 43%;}
+.col-10 {width: 48%;}
+.col-11 {width: 53%;}
+.col-12 {width: 58%;}
+.col-13 {width: 63%;}
+.col-14 {width: 68%;}
+.col-15 {width: 73%;}
+.col-16 {width: 78%;}
+.col-17 {width: 83%;}
+.col-18 {width: 88%;}
+.col-19 {width: 93%;}
+.col-20 {width: 100%; padding: 0%;}

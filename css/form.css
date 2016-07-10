@@ -1,0 +1,41 @@
+.form {
+	padding: 0px;
+}
+
+.form .form-row {
+	padding: 10px 0;
+}
+
+.form label {
+	display:block;
+}
+
+input {
+	padding:4px;
+	border:1px solid #ccc;
+	border-radius: 4px;
+	width:90%;
+}
+
+input[type=button], input[type=submit], input[type=reset], button {
+	background-color: #FFD10D;
+	border: none;
+	color: #000000;
+	padding: 15px 40px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 0px;
+	font-weight: bold;
+}
+
+.form .radios label {display:inline;}
+.form .radios input {width:auto;}
+
+textarea {
+	width:90%;
+}
+
+#campo_conocido_como {
+	display: none;
+}
